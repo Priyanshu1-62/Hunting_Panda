@@ -5,7 +5,19 @@ export async function GET() {
     try {
         const filePath=path.join(process.cwd(), "src/data/blogs");
         const files=await fs.readdir(filePath);
-        return Response.json(files);
+        const data=[];
+        for(let i=0;i<files.length;i++){
+            const fileName=files[i];
+            const currPath=path.join(filePath, fileName);
+            const fileData=await fs.readFile(currPath, "utf-8");
+            const parsedData=JSON.parse(fileData);
+            data.push({
+                "title": parsedData.title,
+                "description": parsedData.description,
+                "date": parsedData.date
+            })
+        }
+        return Response.json(data);
     } 
     catch (error) {
         if(error.code === "ENOENT"){
