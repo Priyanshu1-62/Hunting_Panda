@@ -1,8 +1,9 @@
 import React from 'react'
 
-function page() {
+function page({ params }) {
+  const { title }=React.use(params);
   return (
-    <div>page</div>
+    <div>{title}</div>
   )
 }
 

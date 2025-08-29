@@ -14,7 +14,8 @@ export async function GET() {
             data.push({
                 "title": parsedData.title,
                 "description": parsedData.description,
-                "date": parsedData.date
+                "date": parsedData.date,
+                "slug": parsedData.slug
             })
         }
         return Response.json(data);
