@@ -1,16 +1,21 @@
+import { Search } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
 function Navbar() {
   return (
-    <div className="flex justify-center mt-5">
-        <ul className="flex gap-6 font-bold">
-            <Link href="/home">Home</Link>
-            <Link href="about">About</Link>
-            <Link href="blog">Blog</Link>
-            <Link href="contact">Contact</Link>
+    <>
+    <div className="flex justify-center items-center mt-5">
+        <ul className="flex gap-7 text-lg text-stone-800">
+            <li><Link href="/home">Home</Link></li>
+            <li><Link href="about">About</Link></li>
+            <li><Link href="blog">Blog</Link></li>
+            <li><Link href="contact">Contact</Link></li>
         </ul>
+        <Search className="ml-6"/>
     </div>
+    <div className="h-0.5 mt-3 mx-3 bg-stone-400"></div>
+    </>
   )
 }
 
