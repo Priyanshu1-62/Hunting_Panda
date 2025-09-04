@@ -2,5 +2,7 @@
     "title": "Adavanced JavaScript Concepts",
     "description": "Powerful JavaSript techniques to make your work stand out.",
     "date": "30/06/2025",
+    "category": "advancedJS",
+    "likes": "30",
     "slug": "advancedJS"
 }

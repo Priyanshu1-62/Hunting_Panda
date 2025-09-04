@@ -1,6 +1,8 @@
 {
-    "title": "Tailwind tips & tricks",
+    "title": "Tips & tricks",
     "description": "Useful methods and tricks collected through practical experience.",
     "date": "30/06/2025",
-    "slug": "tailwindCSS-tips&tricks"
+    "category": "tips&tricks",
+    "likes": "30",
+    "slug": "tips&tricks"
 }
