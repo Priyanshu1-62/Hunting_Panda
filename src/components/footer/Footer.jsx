@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin, SiInstagram, SiFacebook, SiYoutube } from 'react-
 function Footer() {
   return (
     <div className="bg-[#22223b] text-white">
-      <div className="flex justify-between h-80 px-24">
+      <div className="lg:flex justify-between lg:h-80 px-5 md:px-16 lg:px-24">
         <div className="flex justify-center items-center">
             <div className="relative h-35 w-35">
               <Image src="/panda_pic1.png" fill/>
@@ -16,20 +16,35 @@ function Footer() {
               <h2 className="text-xl">Hunt your doubts, catch clearity</h2>
             </div>
         </div>
-        <div className="flex flex-col gap-1 justify-center">
+        <div className="flex lg:hidden justify-around my-4">
+          <div className="flex flex-col gap-1">
+            <h4 className="font-bold mb-2">Learn</h4>
+            <h4>Lessons</h4>
+            <h4>Tips & Tricks</h4>
+            <h4>Code Snippets</h4> 
+            <h4>Notes</h4>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h4 className="font-bold mb-2">Legal</h4>
+            <h4>Terms of Service</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Disclaimer</h4>
+          </div>
+        </div>
+        <div className="hidden lg:flex flex-col gap-1 mt-20">
           <h4 className="font-bold mb-2">Learn</h4>
           <h4>Lessons</h4>
           <h4>Tips & Tricks</h4>
-          <h4>Code Snippets</h4>
+          <h4>Code Snippets</h4> 
           <h4>Notes</h4>
         </div>
-        <div className="flex flex-col gap-1 justify-center">
+        <div className="hidden lg:flex flex-col gap-1 mt-20">
           <h4 className="font-bold mb-2">Legal</h4>
           <h4>Terms of Service</h4>
           <h4>Privacy Policy</h4>
           <h4>Disclaimer</h4>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center my-3">
             <h2 className="">Follow us on social media</h2>
             <div className="flex gap-4 py-2 border-t-2 border-b-neutral-500">
               <Link href="">
