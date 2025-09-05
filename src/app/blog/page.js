@@ -26,7 +26,7 @@ function page() {
             <div className="flex flex-row-reverse">
               <Link 
                 href={`http://localhost:3000/blogPost/${blogItem.slug}`}
-                className="px-5 py-2 bg-sky-700 text-white rounded-lg"
+                className="px-6 py-2 bg-sky-700 text-white rounded-lg"
               >
               See all</Link>
             </div>
