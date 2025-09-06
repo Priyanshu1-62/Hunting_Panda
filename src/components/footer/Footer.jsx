@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin, SiInstagram, SiFacebook, SiYoutube } from 'react-
 function Footer() {
   return (
     <div className="bg-[#22223b] text-white">
-      <div className="lg:flex justify-between lg:h-80 px-5 md:px-16 lg:px-24">
+      <div className="lg:flex justify-between lg:h-80 px-5 md:px-0 lg:px-24">
         <div className="flex justify-center items-center">
             <div className="relative h-35 w-35">
               <Image src="/panda_pic1.png" fill/>
