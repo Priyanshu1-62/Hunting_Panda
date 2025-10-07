@@ -66,7 +66,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center pt-2 pb-4 text-sm border-t-1 border-gray-600">
-        <h4>{`@ ${new Date().getFullYear()} Hunting Panda. All rights reserved.`}</h4>
+        <h4>{`Copyright @ ${new Date().getFullYear()} Hunting Panda. All rights reserved.`}</h4>
       </div>
     </div>
   )
