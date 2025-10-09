@@ -9,7 +9,7 @@ function Footer() {
       <div className="lg:flex justify-between lg:h-80 px-5 md:px-0 lg:px-24">
         <div className="flex justify-center items-center">
             <div className="relative h-35 w-35">
-              <Image src="/panda_pic1.png" fill/>
+              <Image src="/panda_pic1.png" fill alt="Logo"/>
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-4xl border-b-2 border-white">Hunting Panda</h2>
