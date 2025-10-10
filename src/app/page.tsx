@@ -18,13 +18,8 @@ function page() {
   
   return (
     <>
-    <div className="relative h-400 w-lvw">
-      <Image src="/bulb_blackBG.jpg" fill alt="Bulb"/>
-      <div 
-        className={`absolute top-100 h-40 w-40 bg-amber-400 transition-transform duration-75 ease-in-out`}
-        style={{ transform: `translateX(${smoothY*1.9}px)` }}
-      >
-      </div>
+    <div className="relative h-[150vw] w-lvw">
+      <Image src="/library1.jpg" fill alt="BG"/>
     </div>
     </>
   )
