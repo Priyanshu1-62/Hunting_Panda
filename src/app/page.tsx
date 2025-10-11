@@ -4,21 +4,15 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// export const metadata = {
+//   title: "Home",
+//   description: "Home page"
+// }
+
 function page() {
-  const [smoothY, setSmoothY]=useState<number>(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const target = window.scrollY * 1.9;
-      setSmoothY(prev => prev + (target - prev) * 0.1); // 0.1 = smoothing factor
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
-  
   return (
     <>
-    <div className="relative h-[150vw] w-lvw">
+    <div className="relative h-[150vw] w-full">
       <Image src="/library1.jpg" fill alt="BG"/>
     </div>
     </>

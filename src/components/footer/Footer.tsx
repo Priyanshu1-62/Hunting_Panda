@@ -5,11 +5,11 @@ import { SiGithub, SiLinkedin, SiInstagram, SiFacebook, SiYoutube } from 'react-
 
 function Footer() {
   return (
-    <div className="bg-[#22223b] text-white">
-      <div className="lg:flex justify-between lg:h-80 px-5 md:px-0 lg:px-24">
+    <div className="bg-teal-950 text-white">
+      <div className="lg:flex justify-around lg:h-80">
         <div className="flex justify-center items-center">
             <div className="relative h-35 w-35">
-              <Image src="/panda_pic1.png" fill alt="Logo"/>
+              <Image src="/panda_pic4.png" fill alt="Logo"/>
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-4xl border-b-2 border-white">Hunting Panda</h2>
@@ -44,7 +44,7 @@ function Footer() {
           <h4>Privacy Policy</h4>
           <h4>Disclaimer</h4>
         </div>
-        <div className="flex flex-col justify-center items-center my-3">
+        <div className="flex flex-col justify-center items-center">
             <h2 className="">Follow us on social media</h2>
             <div className="flex gap-4 py-2 border-t-2 border-b-neutral-500">
               <Link href="">
