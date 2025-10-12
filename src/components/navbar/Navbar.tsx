@@ -2,6 +2,7 @@ import { Search } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { TiThMenu } from "react-icons/ti";
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
         </div>
         <p className="text-teal-600 text-xl font-bold">Hunting Panda</p>
       </div>
-      <div className="flex justify-center items-center bg-transparent">
+      <div className="hidden lg:flex justify-center items-center bg-transparent">
           <ul className="flex gap-11 font-[450] text-teal-50">
               <li><Link className="hover:text-emerald-50 hover:text-shadow-lg" href="/home">Home</Link></li>
               <li><Link className="hover:text-emerald-50 hover:text-shadow-lg" href="blog">Blog</Link></li>
@@ -22,10 +23,11 @@ function Navbar() {
               <li><Link className="hover:text-emerald-50 hover:text-shadow-lg" href="contact">Contact</Link></li>
           </ul>
       </div>
-      <div className="flex gap-2 text-teal-50">
+      <div className="hidden lg:flex gap-2 text-teal-50">
         <button className="px-4 py-1 rounded-2xl border-1 border-teal-50 text-sm font-bold">Log In</button>
         <button className="px-4 py-1 rounded-2xl border-1 border-teal-50 bg-[#00E599] text-stone-800 text-sm font-bold">Sign up</button>
       </div>
+      <button className="flex lg:hidden text-2xl text-teal-50"><TiThMenu /></button>
     </div>
 
     </>
