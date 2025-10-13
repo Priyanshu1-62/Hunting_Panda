@@ -1,10 +1,16 @@
-import { Search } from 'lucide-react'
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { TiThMenu } from "react-icons/ti";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Navbar() {
+  const [showResources, setShowResources]=useState<Boolean>(false);
+  const handleShowResources = () => {
+    setShowResources(prev => !prev);
+  }
   return (
     <>
     <div className="absolute top-0 z-[1] w-full py-4 px-12 flex items-center justify-between">
@@ -17,23 +23,26 @@ function Navbar() {
       <div className="hidden lg:flex justify-center items-center bg-transparent">
           <ul className="flex gap-11 font-[450] text-teal-50">
               <li>
-                <Link className="" href="/home">Home</Link>
+                <Link className="block py-4" href="/home">Home</Link>
               </li>
               <li>
-                <Link className="" href="/blog">Blog</Link>
+                <Link className="block py-4" href="/blog">Blog</Link>
               </li>
               <li className="relative flex flex-col items-center">
-                <Link className="" href="/resources">Resources</Link>
-                <div className="absolute top-11 flex flex-col px-3 py-2 bg-gray-900 text-white rounded-lg">
+                <button className="flex items-center py-4 text-amber-50" onMouseEnter={()=>{setShowResources(true)}} onMouseLeave={()=>{setShowResources(false)}}>Resources<RiArrowDropDownLine size={30}/></button>
+                <div 
+                  className={`${showResources?"rotate-x-0 rotate-z-0":"rotate-x-90 rotate-z-0"} absolute top-14 flex flex-col px-3 py-2 bg-gray-900 text-white border-1 border-gray-700 rounded-lg transition-all duration-150 ease-in-out`}
+                  onMouseEnter={()=>{setShowResources(true)}} onMouseLeave={()=>{setShowResources(false)}}
+                >
                   <p className="px-3 py-2 hover:bg-gray-800 rounded-lg">Snippets</p>
                   <p className="px-3 py-2 hover:bg-gray-800 rounded-lg">Notes</p>
                 </div>
               </li>
               <li>
-                <Link className="" href="/about">About</Link>
+                <Link className="block py-4" href="/about">About</Link>
               </li>
               <li>
-                <Link className="" href="/contact">Contact</Link>
+                <Link className="block py-4" href="/contact">Contact</Link>
               </li>
           </ul>
       </div>
