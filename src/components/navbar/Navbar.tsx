@@ -69,7 +69,10 @@ function Navbar() {
       <ul className="flex flex-col gap-5 text-amber-50">
         <li className="border-b-1 border-[#343a40]">Home</li>
         <li className="border-b-1 border-[#343a40]">Blog</li>
-        <li className="border-b-1 border-[#343a40]">Resources</li>
+        <li className="flex justify-between w-full border-b-1 border-[#343a40]">
+          Resources
+          <RiArrowDropDownLine size={30}/>
+        </li>
         <li className="border-b-1 border-[#343a40]">Contact</li>
         <li className="border-b-1 border-[#343a40]">About</li>
       </ul>
