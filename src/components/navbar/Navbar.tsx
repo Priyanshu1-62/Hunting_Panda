@@ -23,7 +23,7 @@ function Navbar() {
   }, [showOptions]);
   return (
     <>
-    <div className={`absolute top-0 z-[1] w-full py-4 px-12 flex items-center justify-between lg:bg-transparent ${showOptions?"bg-[#001219]":""}`}>
+    <div className={`absolute top-0 z-[2] w-full py-4 px-12 flex items-center justify-between lg:bg-transparent ${showOptions?"bg-[#001219]":""}`}>
       <div className="flex items-center gap-2">
         <div className="relative h-14 w-14">
           <Image src="/panda_pic0.png" fill alt="logo"/>
@@ -65,8 +65,8 @@ function Navbar() {
         {showOptions && <GiCrossMark />}
       </button>
     </div>
-    <div className={`${showOptions?"rotate-x-0 rotate-z-0":"opacity-20 rotate-x-90 rotate-z-0"} origin-top absolute top-22 z-[1] flex flex-col lg:hidden justify-between w-full h-[80vh] px-12 py-4 bg-[#001219] transition-all duration-300 ease-in-out`}>
-      <ul className="flex flex-col text-amber-50">
+    <div className={`${showOptions?"rotate-x-0 rotate-z-0":"opacity-5 rotate-x-90 rotate-z-0"} origin-top absolute top-0 z-[1] w-full h-full flex flex-col lg:hidden justify-between px-12 py-4 bg-[#001219] transition-all duration-300 ease-in-out`}>
+      <ul className="flex flex-col text-amber-50 mt-22">
         <li className="my-5 border-b-1 border-[#343a40]">Home</li>
         <li className="my-5 border-b-1 border-[#343a40]">Blog</li>
         <li className={`${showResources?"mt-5":"my-5"} mt-5 flex justify-between w-full border-b-1 border-[#343a40]`} onClick={()=>{setShowResources(prev=>!prev)}}>
