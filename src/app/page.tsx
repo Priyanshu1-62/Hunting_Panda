@@ -18,7 +18,6 @@ function page() {
 
     const repeat = () => {
       if (isCancelled) return;
-      console.log(`${i1.current} ${sentences[i1.current][i2.current]} ${s1.current} ${s2.current} ${direction.current}`);
       if(i2.current < s2.current){
         if(i2.current == -1){
           i1.current = (i1.current + 1) % s1.current;
@@ -29,19 +28,19 @@ function page() {
           setSentence(prev => prev + ch);
           i2.current++;
           
-          setTimeout(repeat, 300);
+          setTimeout(repeat, 200);
         }
         else{
           if(direction.current){
             let ch=sentences[i1.current][i2.current];
             setSentence(prev => prev + ch);
             i2.current++;
-            setTimeout(repeat, 300);
+            setTimeout(repeat, 200);
           }
           else{
             setSentence(prev => prev.slice(0, -1));
             i2.current--;
-            setTimeout(repeat, 150);
+            setTimeout(repeat, 100);
           }
         }
       }
