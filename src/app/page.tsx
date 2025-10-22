@@ -28,26 +28,26 @@ function page() {
           setSentence(prev => prev + ch);
           i2.current++;
           
-          setTimeout(repeat, 200);
+          setTimeout(repeat, 100);
         }
         else{
           if(direction.current){
             let ch=sentences[i1.current][i2.current];
             setSentence(prev => prev + ch);
             i2.current++;
-            setTimeout(repeat, 200);
+            setTimeout(repeat, 100);
           }
           else{
             setSentence(prev => prev.slice(0, -1));
             i2.current--;
-            setTimeout(repeat, 100);
+            setTimeout(repeat, 50);
           }
         }
       }
       else{
         direction.current = 0;
         i2.current--;
-        setTimeout(repeat, 1000);
+        setTimeout(repeat, 700);
       }
     };
   
@@ -64,12 +64,12 @@ function page() {
       <Image src="/library1.jpg" fill alt="BG"/>
       <div className="absolute top-44 w-full px-6">
         <div className="flex justify-center">
-          <div className="flex flex-col lg:flex-row items-center gap-3 text-5xl font-bold text-amber-50">
+          <div className="flex flex-col lg:flex-row items-center gap-3 text-3xl md:4xl lg:text-5xl font-bold text-amber-50">
             <p>Hunt your doubts,</p>
             <p>Catch Clearity</p>
           </div>
         </div>
-        <div className="flex justify-center mt-8 text-2xl text-amber-50">
+        <div className="flex justify-center mt-8 text-xl lg:text-2xl text-amber-50">
           <p>{sentence}</p>
         </div>
       </div>
