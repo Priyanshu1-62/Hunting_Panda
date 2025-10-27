@@ -3,5 +3,6 @@ export const sentences:string[] = [
     "TypeScript",
     "Next.JS",
     "PostgreSQL",
-    "Machine Learning",
+    "Prompt Engineering",
+    "Docker"
 ];

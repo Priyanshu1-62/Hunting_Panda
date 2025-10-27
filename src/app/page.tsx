@@ -62,15 +62,23 @@ function page() {
     <>
     <div className="relative h-[150vw] w-full">
       <Image src="/library1.jpg" fill alt="BG"/>
-      <div className="absolute top-44 w-full px-6">
+      <div className="absolute top-44 w-full px-16">
         <div className="flex justify-center">
           <div className="flex flex-col lg:flex-row items-center gap-3 text-3xl md:4xl lg:text-5xl font-bold text-amber-50">
             <p>Hunt your doubts,</p>
             <p>Catch Clearity</p>
           </div>
         </div>
-        <div className="flex justify-center mt-8 text-xl lg:text-2xl text-amber-50">
+        <div className="flex justify-center mt-8 mb-12 text-xl lg:text-2xl text-amber-50">
           <p>{sentence}</p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="w-full aspect-square bg-cyan-600">
+
+          </div>
+          <div className="w-full aspect-square bg-cyan-600">
+
+          </div>
         </div>
       </div>
     </div>
