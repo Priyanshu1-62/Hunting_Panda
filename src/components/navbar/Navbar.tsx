@@ -23,7 +23,7 @@ function Navbar() {
   }, [showOptions]);
   return (
     <>
-    <div className={`absolute top-0 z-[2] w-full py-4 px-12 flex items-center justify-between lg:bg-transparent ${showOptions?"bg-[#001219]":""}`}>
+    <div className={`absolute top-0 z-[2] w-full py-4 px-10 lg:px-16 flex items-center justify-between lg:bg-transparent ${showOptions?"bg-[#001219]":""}`}>
       <div className="flex items-center gap-2">
         <div className="relative h-14 w-14">
           <Image src="/panda_pic0.png" fill alt="logo"/>
