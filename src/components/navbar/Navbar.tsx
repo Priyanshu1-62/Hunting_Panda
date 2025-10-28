@@ -33,7 +33,7 @@ function Navbar() {
       <div className="hidden lg:flex justify-center items-center">
           <ul className="flex gap-11 font-[450] text-teal-50">
               <li>
-                <Link className="block py-4" href="/home">Home</Link>
+                <Link className="block py-4" href="/">Home</Link>
               </li>
               <li>
                 <Link className="block py-4" href="/blog">Blog</Link>
