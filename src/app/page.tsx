@@ -73,14 +73,14 @@ function page() {
           <p>{sentence}</p>
           <p className="text-amber-50 animate-blink">|</p>
         </div>
-        {/* <div className="flex flex-col md:flex-row gap-12 mt-16">
-          <div className="w-full aspect-square bg-cyan-600 animate-bounce">
+        <div className="flex flex-col md:flex-row gap-16 mt-16">
+          <div className="w-full aspect-square bg-cyan-600">
 
           </div>
           <div className="w-full aspect-square bg-cyan-600">
 
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
     </>
