@@ -69,17 +69,18 @@ function page() {
             <p>Catch Clearity</p>
           </div>
         </div>
-        <div className="flex justify-center mt-8 mb-12 text-xl lg:text-2xl text-amber-50">
+        <div className="flex justify-center gap-1 mt-8 text-xl lg:text-2xl text-amber-50">
           <p>{sentence}</p>
+          <p className="text-amber-50 animate-blink">|</p>
         </div>
-        <div className="flex flex-col md:flex-row gap-12">
-          <div className="w-full aspect-square bg-cyan-600 animate-pulse">
+        {/* <div className="flex flex-col md:flex-row gap-12 mt-16">
+          <div className="w-full aspect-square bg-cyan-600 animate-bounce">
 
           </div>
           <div className="w-full aspect-square bg-cyan-600">
 
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
     </>
